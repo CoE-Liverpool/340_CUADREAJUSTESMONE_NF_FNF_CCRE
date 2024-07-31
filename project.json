@@ -1,12 +1,13 @@
 {
-  "name": "00_GENERICO_WINDOWS_NEGOCIOS_FINANCIEROS_XX_XX_XX",
-  "projectId": "649f4468-00fd-48b0-9c0b-0f60cef071f3",
+  "name": "340_CUADREAJUSTESMONE_NF_FNF_CCRE",
+  "projectId": "7fe0e339-80d8-4db4-8b4d-57fcab53a0ea",
   "description": "Robotic Enterprise Framework Génerico Liverpool Windows",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.GSuite.Activities": "[2.4.3]",
     "UiPath.Mail.Activities": "[1.22.2]",
+    "UiPath.Python.Activities": "[1.7.1]",
     "UiPath.System.Activities": "[23.10.5]",
     "UiPath.Terminal.Activities": "[2.7.1]",
     "UiPath.UIAutomation.Activities": "[23.10.9]",
@@ -46,7 +47,6 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",

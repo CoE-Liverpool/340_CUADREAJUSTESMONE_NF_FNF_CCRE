@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="KillAllProcesses" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1153.3333333333333,2200" sap2010:WorkflowViewState.IdRef="CloseAllApplications_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="KillAllProcesses" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="574,1863" sap2010:WorkflowViewState.IdRef="CloseAllApplications_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -94,23 +94,23 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Use the Kill Process activity to force the termination of the Windows processes representing applications used in the business process being automated.&#xA;Note that killing processes might have undesirable outcomes, such as losing unsaved changes to files." DisplayName="Kill All Processes" sap:VirtualizedContainerService.HintSize="548.6666666666666,2135.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Use the Kill Process activity to force the termination of the Windows processes representing applications used in the business process being automated.&#xA;Note that killing processes might have undesirable outcomes, such as losing unsaved changes to files." DisplayName="Kill All Processes" sap:VirtualizedContainerService.HintSize="549,1798" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Kill processes)" sap:VirtualizedContainerService.HintSize="486.6666666666667,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Killing processes...&quot;]" />
-    <ui:CommentOut DisplayName="Comment Out Cerrar SAP" sap:VirtualizedContainerService.HintSize="486.6666666666667,278.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:LogMessage DisplayName="Log message (Kill processes)" sap:VirtualizedContainerService.HintSize="487,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Killing processes...&quot;]" />
+    <ui:CommentOut DisplayName="Comment Out Cerrar SAP" sap:VirtualizedContainerService.HintSize="487,310" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities 1" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Ignored Activities 1" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="/F /IM SAPLOGON.EXE" DisplayName="Start Process  Cerrando SAP" FileName="TASKKILL" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="StartProcess_1">
+          <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="/F /IM SAPLOGON.EXE" DisplayName="Start Process  Cerrando SAP" FileName="TASKKILL" sap:VirtualizedContainerService.HintSize="354,111" sap2010:WorkflowViewState.IdRef="StartProcess_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -120,33 +120,22 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out Cerrar Excel" sap:VirtualizedContainerService.HintSize="486.6666666666667,278.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="/F /IM EXCEL.EXE" DisplayName="Start Process  Cerrando Excel" FileName="TASKKILL" sap:VirtualizedContainerService.HintSize="487,120" sap2010:WorkflowViewState.IdRef="StartProcess_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:StartProcess>
+    <ui:CommentOut DisplayName="Comment Out Cerrrar EXPLORER" sap:VirtualizedContainerService.HintSize="487,310" sap2010:WorkflowViewState.IdRef="CommentOut_3">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities 2" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence DisplayName="Ignored Activities 3" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="/F /IM EXCEL.EXE" DisplayName="Start Process  Cerrando Excel" FileName="TASKKILL" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="StartProcess_2">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:StartProcess>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out Cerrrar EXPLORER" sap:VirtualizedContainerService.HintSize="486.6666666666667,278.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities 3" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="/F /IM IEXPLORE.EXE" DisplayName="Start Process  Cerrando Explorer" FileName="TASKKILL" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="StartProcess_3">
+          <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="/F /IM IEXPLORE.EXE" DisplayName="Start Process  Cerrando Explorer" FileName="TASKKILL" sap:VirtualizedContainerService.HintSize="354,111" sap2010:WorkflowViewState.IdRef="StartProcess_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -189,9 +178,7 @@
           </sap:WorkflowViewStateService.ViewState>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\LimpiarChrome.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Framework\LimpiarChrome.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="in_Sistema">
-                <Literal x:TypeArguments="x:String">www.google.com.mx</Literal>
-              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Sistema">www.google.com.mx</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
         </Sequence>
