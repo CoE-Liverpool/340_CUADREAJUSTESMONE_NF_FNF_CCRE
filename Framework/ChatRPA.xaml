@@ -88,7 +88,6 @@
       <AssemblyReference>UiPath.Web</AssemblyReference>
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>UiPath.Python</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ChatRPA" sap:VirtualizedContainerService.HintSize="496,492.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
