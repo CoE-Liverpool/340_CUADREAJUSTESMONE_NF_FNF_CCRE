@@ -1,0 +1,51 @@
+﻿{
+  "Version": "1.0",
+  "Metadata": [
+    {
+      "ApplicationType": "API",
+      "ExecutablePath": null,
+      "Url": {
+        "Value": "in_Config(\"END_POINT_RPA_NF\").ToString",
+        "IsExpression": true
+      },
+      "Arguments": null,
+      "Version": null
+    },
+    {
+      "ApplicationType": "API",
+      "ExecutablePath": null,
+      "Url": {
+        "Value": "in_url",
+        "IsExpression": true
+      },
+      "Arguments": null,
+      "Version": null
+    },
+    {
+      "ApplicationType": "Chrome",
+      "ExecutablePath": {
+        "Value": "chrome.exe",
+        "IsExpression": false
+      },
+      "Url": {
+        "Value": "https://www.google.com.mx",
+        "IsExpression": false
+      },
+      "Arguments": null,
+      "Version": null
+    },
+    {
+      "ApplicationType": "WindowsApplication",
+      "ExecutablePath": {
+        "Value": "excel.exe",
+        "IsExpression": false
+      },
+      "Url": null,
+      "Arguments": {
+        "Value": "in_Config(\"Temporal\").ToString+\"CUADRE \"+(UCASE(NOW.adddays(-1).ToString(\"MMMM\",System.Globalization.CultureInfo.CreateSpecificCulture(\"es\")).ToString))+\" \"+Now.adddays(-1).tostring(\"yyyy\")+\".xlsx\"",
+        "IsExpression": true
+      },
+      "Version": null
+    }
+  ]
+}

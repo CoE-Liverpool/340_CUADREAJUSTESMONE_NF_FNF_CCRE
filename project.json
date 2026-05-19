@@ -1,21 +1,24 @@
 {
   "name": "340_CUADREAJUSTESMONE_NF_FNF_CCRE",
-  "projectId": "7fe0e339-80d8-4db4-8b4d-57fcab53a0ea",
-  "description": "Robotic Enterprise Framework Génerico Liverpool Windows",
+  "projectId": "0ad4534a-55d2-4b52-9e0b-6b956ec90c53",
+  "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.GSuite.Activities": "[2.4.3]",
     "UiPath.Mail.Activities": "[1.22.2]",
+    "UiPath.Python.Activities": "[1.7.1]",
     "UiPath.System.Activities": "[23.10.5]",
+    "UiPath.Terminal.Activities": "[2.7.1]",
+    "UiPath.Testing.Activities": "[23.10.0]",
     "UiPath.UIAutomation.Activities": "[23.10.9]",
-    "UiPath.WebAPI.Activities": "[1.18.0]"
+    "UiPath.WebAPI.Runtime": "[1.18.0]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.3.0",
-  "projectVersion": "1.0.2",
+  "projectVersion": "1.0.9",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -48,12 +51,42 @@
     "modernBehavior": false,
     "saveToCloud": false
   },
+  "arguments": {
+    "input": [
+      {
+        "name": "in_Fecha",
+        "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "required": false,
+        "hasDefault": true
+      },
+      {
+        "name": "in_ConfigPath",
+        "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "required": false,
+        "hasDefault": true
+      }
+    ],
+    "output": []
+  },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "1a7c99f5-c3a1-4f03-bb80-08ddb1b9bfd2",
-      "input": [],
+      "uniqueId": "ba6d9739-9348-4d04-ab08-560527856952",
+      "input": [
+        {
+          "name": "in_Fecha",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "in_ConfigPath",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true
+        }
+      ],
       "output": []
     }
   ],

@@ -71,7 +71,7 @@ def txtR17(path,nfile):
     else:
         print('No existe el archivo...')
 
-if __name__ == "__main__":
+def main():
     #rpath = os.getcwd()
     rpath ='D:\\Procesos_UiPath\\340_CUADREAJUSTESMONE_NF_FNF_CCRE\\Archivos'
 
