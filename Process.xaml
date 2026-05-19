@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1254,780.6666666666666</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,780.6666666666666</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="132">
@@ -197,7 +197,7 @@
             <av:Size x:Key="ShapeSize">200,84.66666666666667</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="TXN1" sap:VirtualizedContainerService.HintSize="878,4717.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="TXN1" sap:VirtualizedContainerService.HintSize="878,6035.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="CONTADOR" />
             <Variable x:TypeArguments="x:Object" Name="FECHA" />
@@ -305,28 +305,28 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </uga:GSuiteApplicationScope>
-          <Switch x:TypeArguments="x:String" DisplayName="EVALUA EJECUCIÓN" Expression="[CONTADOR]" sap:VirtualizedContainerService.HintSize="816,4324.666666666667" sap2010:WorkflowViewState.IdRef="Switch`1_6">
+          <Switch x:TypeArguments="x:String" DisplayName="EVALUA EJECUCIÓN" Expression="[CONTADOR]" sap:VirtualizedContainerService.HintSize="816,5642.666666666667" sap2010:WorkflowViewState.IdRef="Switch`1_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Switch x:TypeArguments="x:String" x:Key="0" DisplayName="EVALUA ENTREGABLE" Expression="[ENTREGABLE]" sap:VirtualizedContainerService.HintSize="496.6666666666667,170" sap2010:WorkflowViewState.IdRef="Switch`1_7">
+            <Switch x:TypeArguments="x:String" x:Key="0" DisplayName="EVALUA ENTREGABLE" Expression="[ENTREGABLE]" sap:VirtualizedContainerService.HintSize="776,5403.333333333333" sap2010:WorkflowViewState.IdRef="Switch`1_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence x:Key="NO" DisplayName="ENTREGABLES" sap:VirtualizedContainerService.HintSize="450,446.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_51">
+              <Sequence x:Key="NO" DisplayName="ENTREGABLES" sap:VirtualizedContainerService.HintSize="736,5187.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_51">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Folder="{x:Null}" SecureCredentialSecret="{x:Null}" TimeoutMS="{x:Null}" AuthenticationType="ServiceAccountKey" ConfigLocation="PropertiesPanel" DataStoreLocation="DISK" DisplayName="VALIDA SI ES REPROCESO" HasDomainWideAccesss="True" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_7" KeyPath="[in_Config(&quot;Json_Drive&quot;).ToString]" KeyType="JSON" OAuthClient="UIPATH" Password="notasecret" ServiceAccountEmail="[in_Config(&quot;User_Drive&quot;).ToString]" Services="Unselected" UseConnectionService="False" UserEmail="[in_Config(&quot;User_Drive&quot;).ToString]">
+                <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Folder="{x:Null}" SecureCredentialSecret="{x:Null}" TimeoutMS="{x:Null}" AuthenticationType="ServiceAccountKey" ConfigLocation="PropertiesPanel" DataStoreLocation="DISK" DisplayName="VALIDA SI ES REPROCESO" HasDomainWideAccesss="True" sap:VirtualizedContainerService.HintSize="674,54" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_7" KeyPath="[in_Config(&quot;Json_Drive&quot;).ToString]" KeyType="JSON" OAuthClient="UIPATH" Password="notasecret" ServiceAccountEmail="[in_Config(&quot;User_Drive&quot;).ToString]" Services="Unselected" UseConnectionService="False" UserEmail="[in_Config(&quot;User_Drive&quot;).ToString]">
                   <uga:GSuiteApplicationScope.AuthenticationScopes>
                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                       <InArgument x:TypeArguments="x:String">https://www.googleapis.com/auth/drive.readonly</InArgument>
@@ -458,10 +458,10 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uga:GSuiteApplicationScope>
-                <Switch x:TypeArguments="x:Boolean" DisplayName="CUADRE" Expression="[System.IO.File.Exists(in_Config(&quot;Temporal&quot;).ToString+&quot;CUADRE_OK.txt&quot;)]" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="Switch`1_38">
+                <Switch x:TypeArguments="x:Boolean" DisplayName="CUADRE" Expression="[System.IO.File.Exists(in_Config(&quot;Temporal&quot;).ToString+&quot;CUADRE_OK.txt&quot;)]" sap:VirtualizedContainerService.HintSize="674,3584.6666666666665" sap2010:WorkflowViewState.IdRef="Switch`1_38">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -611,7 +611,7 @@
                                       <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
                                     </InArgument>
                                     <InArgument x:TypeArguments="x:String" x:Key="Ruta_Script">
-                                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;Archivos&quot;).ToString +&quot;ReportesCredito.py&quot;" />
+                                      <Literal x:TypeArguments="x:String">Archivos\ReportesCredito.py</Literal>
                                     </InArgument>
                                     <InArgument x:TypeArguments="x:String" x:Key="Invoke_Method">
                                       <Literal x:TypeArguments="x:String">main</Literal>
@@ -2114,7 +2114,7 @@
                     </If>
                   </Sequence>
                 </Switch>
-                <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Folder="{x:Null}" SecureCredentialSecret="{x:Null}" TimeoutMS="{x:Null}" AuthenticationType="ServiceAccountKey" ConfigLocation="PropertiesPanel" DataStoreLocation="DISK" DisplayName="ACTUALIZA CONTADOR" HasDomainWideAccesss="True" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_93" KeyPath="[in_Config(&quot;Json_Drive&quot;).ToString]" KeyType="JSON" OAuthClient="UIPATH" Password="notasecret" ServiceAccountEmail="[in_Config(&quot;User_Drive&quot;).ToString]" Services="Unselected" UseConnectionService="False" UserEmail="[in_Config(&quot;User_Drive&quot;).ToString]">
+                <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Folder="{x:Null}" SecureCredentialSecret="{x:Null}" TimeoutMS="{x:Null}" AuthenticationType="ServiceAccountKey" ConfigLocation="PropertiesPanel" DataStoreLocation="DISK" DisplayName="ACTUALIZA CONTADOR" HasDomainWideAccesss="True" sap:VirtualizedContainerService.HintSize="674,54" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_93" KeyPath="[in_Config(&quot;Json_Drive&quot;).ToString]" KeyType="JSON" OAuthClient="UIPATH" Password="notasecret" ServiceAccountEmail="[in_Config(&quot;User_Drive&quot;).ToString]" Services="Unselected" UseConnectionService="False" UserEmail="[in_Config(&quot;User_Drive&quot;).ToString]">
                   <uga:GSuiteApplicationScope.AuthenticationScopes>
                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                       <InArgument x:TypeArguments="x:String">https://www.googleapis.com/auth/drive.readonly</InArgument>
@@ -2160,28 +2160,28 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uga:GSuiteApplicationScope>
-                <If Condition="[SIN_INFO.ToString.Equals(&quot;OK&quot;)]" DisplayName="VALIDA SI EXISTE CUADRE" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="If_467">
+                <If Condition="[SIN_INFO.ToString.Equals(&quot;OK&quot;)]" DisplayName="VALIDA SI EXISTE CUADRE" sap:VirtualizedContainerService.HintSize="674,1264" sap2010:WorkflowViewState.IdRef="If_467">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence sap:VirtualizedContainerService.HintSize="554,919" sap2010:WorkflowViewState.IdRef="Sequence_809">
+                    <Sequence sap:VirtualizedContainerService.HintSize="554,938.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_809">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="DASHBOARD" sap:VirtualizedContainerService.HintSize="512,710" sap2010:WorkflowViewState.IdRef="Sequence_523">
+                      <Sequence DisplayName="DASHBOARD" sap:VirtualizedContainerService.HintSize="512,726.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_523">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <If Condition="[System.IO.File.Exists(in_Config(&quot;Temporal&quot;).ToString+&quot;USERS.csv&quot;)]" DisplayName="EVALUA SI EXISTE REPORTE DE USERS" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="If_83">
+                        <If Condition="[System.IO.File.Exists(in_Config(&quot;Temporal&quot;).ToString+&quot;USERS.csv&quot;)]" DisplayName="EVALUA SI EXISTE REPORTE DE USERS" sap:VirtualizedContainerService.HintSize="450,54" sap2010:WorkflowViewState.IdRef="If_83">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2253,7 +2253,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <If Condition="[System.IO.File.Exists(in_Config(&quot;Temporal&quot;).ToString+&quot;TDAS.csv&quot;)]" DisplayName="EVALUA SI EXISTE REPORTE DE TDAS" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="If_114">
+                        <If Condition="[System.IO.File.Exists(in_Config(&quot;Temporal&quot;).ToString+&quot;TDAS.csv&quot;)]" DisplayName="EVALUA SI EXISTE REPORTE DE TDAS" sap:VirtualizedContainerService.HintSize="450,54" sap2010:WorkflowViewState.IdRef="If_114">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2325,7 +2325,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <Sequence DisplayName="GENERACIÓN DE TABLAS" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                        <Sequence DisplayName="GENERACIÓN DE TABLAS" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_87">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -8307,7 +8307,7 @@
                             </If.Else>
                           </If>
                         </Sequence>
-                        <If Condition="[System.IO.File.Exists(in_Config(&quot;Temporal&quot;).ToString+&quot;plantilla_dash_ok.txt&quot;)]" DisplayName="VALIDA PLANTILLA DASH" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="If_152">
+                        <If Condition="[System.IO.File.Exists(in_Config(&quot;Temporal&quot;).ToString+&quot;plantilla_dash_ok.txt&quot;)]" DisplayName="VALIDA PLANTILLA DASH" sap:VirtualizedContainerService.HintSize="450,54" sap2010:WorkflowViewState.IdRef="If_152">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -8714,7 +8714,7 @@
                             </If>
                           </If.Else>
                         </If>
-                        <Sequence DisplayName="ACTUALIZACIÓN DE DASHBOARD" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_541">
+                        <Sequence DisplayName="ACTUALIZACIÓN DE DASHBOARD" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_541">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -9108,7 +9108,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ExcelApplicationScope>
                         </Sequence>
-                        <Sequence DisplayName="CARGA" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_531">
+                        <Sequence DisplayName="CARGA" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_531">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -9432,7 +9432,7 @@
                           </ui:InvokeWorkflowFile>
                         </Sequence>
                       </Sequence>
-                      <Sequence DisplayName="FINALIZA PROCESO" sap:VirtualizedContainerService.HintSize="512,81" sap2010:WorkflowViewState.IdRef="Sequence_553">
+                      <Sequence DisplayName="FINALIZA PROCESO" sap:VirtualizedContainerService.HintSize="512,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_553">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -9654,13 +9654,13 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence sap:VirtualizedContainerService.HintSize="300,140" sap2010:WorkflowViewState.IdRef="Sequence_810">
+                    <Sequence sap:VirtualizedContainerService.HintSize="300,141.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_810">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Folder="{x:Null}" SecureCredentialSecret="{x:Null}" TimeoutMS="{x:Null}" AuthenticationType="ServiceAccountKey" ConfigLocation="PropertiesPanel" DataStoreLocation="DISK" DisplayName="ACTUALIZA CONTADOR" HasDomainWideAccesss="True" sap:VirtualizedContainerService.HintSize="258,52" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_45" KeyPath="[in_Config(&quot;Json_Drive&quot;).ToString]" KeyType="JSON" OAuthClient="UIPATH" Password="notasecret" ServiceAccountEmail="[in_Config(&quot;User_Drive&quot;).ToString]" Services="Unselected" UseConnectionService="False" UserEmail="[in_Config(&quot;User_Drive&quot;).ToString]">
+                      <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Folder="{x:Null}" SecureCredentialSecret="{x:Null}" TimeoutMS="{x:Null}" AuthenticationType="ServiceAccountKey" ConfigLocation="PropertiesPanel" DataStoreLocation="DISK" DisplayName="ACTUALIZA CONTADOR" HasDomainWideAccesss="True" sap:VirtualizedContainerService.HintSize="258,54" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_45" KeyPath="[in_Config(&quot;Json_Drive&quot;).ToString]" KeyType="JSON" OAuthClient="UIPATH" Password="notasecret" ServiceAccountEmail="[in_Config(&quot;User_Drive&quot;).ToString]" Services="Unselected" UseConnectionService="False" UserEmail="[in_Config(&quot;User_Drive&quot;).ToString]">
                         <uga:GSuiteApplicationScope.AuthenticationScopes>
                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                             <InArgument x:TypeArguments="x:String">https://www.googleapis.com/auth/drive.readonly</InArgument>
@@ -9757,7 +9757,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uga:GSuiteApplicationScope>
             </Switch>
-            <Switch x:TypeArguments="x:String" x:Key="1" DisplayName="EVALUA ENTREGABLE" Expression="[ENTREGABLE]" sap:VirtualizedContainerService.HintSize="776,4085.3333333333335" sap2010:WorkflowViewState.IdRef="Switch`1_84">
+            <Switch x:TypeArguments="x:String" x:Key="1" DisplayName="EVALUA ENTREGABLE" Expression="[ENTREGABLE]" sap:VirtualizedContainerService.HintSize="496.6666666666667,166" sap2010:WorkflowViewState.IdRef="Switch`1_84">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -10052,15 +10052,9 @@
                                 </ui:LogMessage>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\Invoke_Python.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="486.6666666666667,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_60" UnSafe="False" WorkflowFileName="Modulos\Invoke_Python.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
-                                      <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta_Script">
-                                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;Archivos&quot;).ToString +&quot;ReportesCredito.py&quot;" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Invoke_Method">
-                                      <Literal x:TypeArguments="x:String">main</Literal>
-                                    </InArgument>
+                                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta_Script">[in_Config("Archivos").ToString +"ReportesCredito.py"]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Invoke_Method">main</InArgument>
                                     <OutArgument x:TypeArguments="x:String" x:Key="Return_Python" />
                                     <InArgument x:TypeArguments="scg:IEnumerable(x:Object)" x:Key="Arguments_Python" />
                                   </ui:InvokeWorkflowFile.Arguments>
@@ -19498,7 +19492,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uga:GSuiteApplicationScope>
             </Switch>
-            <Switch x:TypeArguments="x:String" x:Key="2" DisplayName="EVALUA ENTREGABLE" Expression="[ENTREGABLE]" sap:VirtualizedContainerService.HintSize="840,3918.6666666666665" sap2010:WorkflowViewState.IdRef="Switch`1_107">
+            <Switch x:TypeArguments="x:String" x:Key="2" DisplayName="EVALUA ENTREGABLE" Expression="[ENTREGABLE]" sap:VirtualizedContainerService.HintSize="496.6666666666667,166" sap2010:WorkflowViewState.IdRef="Switch`1_107">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -19793,15 +19787,9 @@
                                 </ui:LogMessage>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\Invoke_Python.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_59" UnSafe="False" WorkflowFileName="Modulos\Invoke_Python.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
-                                      <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta_Script">
-                                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;Archivos&quot;).ToString +&quot;ReportesCredito.py&quot;" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="Invoke_Method">
-                                      <Literal x:TypeArguments="x:String">main</Literal>
-                                    </InArgument>
+                                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Ruta_Script">[in_Config("Archivos").ToString +"ReportesCredito.py"]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="Invoke_Method">main</InArgument>
                                     <OutArgument x:TypeArguments="x:String" x:Key="Return_Python" />
                                     <InArgument x:TypeArguments="scg:IEnumerable(x:Object)" x:Key="Arguments_Python" />
                                   </ui:InvokeWorkflowFile.Arguments>
