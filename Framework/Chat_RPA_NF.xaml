@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1449,1090</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>934,1104</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Chat_RPA_NF_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
@@ -123,7 +123,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Chat_RPA_NF" sap:VirtualizedContainerService.HintSize="708,1025" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Chat_RPA_NF" sap:VirtualizedContainerService.HintSize="617,1039" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="txtJson" />
       <Variable x:TypeArguments="x:Int32" Name="code" />
@@ -136,7 +136,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[in_Config(&quot;STATUS_CHAT_RPA&quot;).ToString = &quot;x&quot; OR in_Config(&quot;STATUS_CHAT_RPA&quot;).ToString = &quot;X&quot;]" DisplayName="EVALUAR SI ESTA ACTIVO EL CHAT RPA" sap:VirtualizedContainerService.HintSize="666,933" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[in_Config(&quot;STATUS_CHAT_RPA&quot;).ToString = &quot;x&quot; OR in_Config(&quot;STATUS_CHAT_RPA&quot;).ToString = &quot;X&quot;]" DisplayName="EVALUAR SI ESTA ACTIVO EL CHAT RPA" sap:VirtualizedContainerService.HintSize="555,928" sap2010:WorkflowViewState.IdRef="If_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,7 +151,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message Info" sap:VirtualizedContainerService.HintSize="479,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Inicia Modulo Chat_RPA_NF&quot;]">
+          <ui:LogMessage DisplayName="Log Message Info" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Inicia Modulo Chat_RPA_NF&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -159,7 +159,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:ReadTextFile File="{x:Null}" Content="[txtJson]" DisplayName="LEER JSON" FileName="[in_Config(&quot;Formatos&quot;).ToString+&quot;JsonCard.txt&quot;]" sap:VirtualizedContainerService.HintSize="479,51" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
+          <ui:ReadTextFile File="{x:Null}" Content="[txtJson]" DisplayName="LEER JSON" FileName="[in_Config(&quot;Formatos&quot;).ToString+&quot;JsonCard.txt&quot;]" sap:VirtualizedContainerService.HintSize="479,52" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -167,7 +167,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:ReadTextFile>
-          <ui:MultipleAssign DisplayName="ASIGNACION DE VALORES" sap:VirtualizedContainerService.HintSize="479,363" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+          <ui:MultipleAssign DisplayName="ASIGNACION DE VALORES" sap:VirtualizedContainerService.HintSize="479,364" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
@@ -251,7 +251,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:MultipleAssign>
-          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[txtJson]" BodyFormat="application/xml" DisplayName="PETICION DE CHAT HTTP Request" EnableSSLVerification="True" EndPoint="[in_Config(&quot;END_POINT_RPA_NF&quot;).ToString]" sap:VirtualizedContainerService.HintSize="479,69" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" ResponseHeaders="[Headers]" Result="[Result]" StatusCode="[Code]" TimeoutMS="6000">
+          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[txtJson]" BodyFormat="application/xml" DisplayName="PETICION DE CHAT HTTP Request" EnableSSLVerification="True" EndPoint="[in_Config(&quot;END_POINT_RPA_NF&quot;).ToString]" sap:VirtualizedContainerService.HintSize="479,70" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" ResponseHeaders="[Headers]" Result="[Result]" StatusCode="[Code]" TimeoutMS="6000">
             <ui:HttpClient.Attachments>
               <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
             </ui:HttpClient.Attachments>
@@ -270,6 +270,9 @@
           </ui:HttpClient>
         </Sequence>
       </If.Then>
+      <If.Else>
+        <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_9" />
+      </If.Else>
     </If>
   </Sequence>
 </Activity>

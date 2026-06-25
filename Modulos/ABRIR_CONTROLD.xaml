@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1440,927</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>934,928</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ABRIRCONTROLD_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
@@ -48,6 +48,8 @@
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -102,7 +104,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Flowchart DisplayName="ABRIRCONTROLD" sap:VirtualizedContainerService.HintSize="644,862" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="ABRIRCONTROLD" sap:VirtualizedContainerService.HintSize="644,863" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -120,18 +122,18 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,207</av:Point>
-          <av:Size x:Key="ShapeSize">200,66</av:Size>
+          <av:Size x:Key="ShapeSize">200,81</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="ABRIR SISTEMA" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_52">
+      <Sequence DisplayName="ABRIR SISTEMA" sap:VirtualizedContainerService.HintSize="546,1518" sap2010:WorkflowViewState.IdRef="Sequence_52">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Delay DisplayName="Retraso" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_12" />
-        <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="https://controld.liverpool.com.mx/wa/" DisplayName="ABRE CHROME" FileName="chrome.exe" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="StartProcess_2">
+        <Delay DisplayName="Retraso" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="484,90" sap2010:WorkflowViewState.IdRef="Delay_12" />
+        <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="https://controld.liverpool.com.mx/wa/" DisplayName="ABRE CHROME" FileName="chrome.exe" sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="StartProcess_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -155,13 +157,13 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:GetActiveWindow>
-        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" DisplayName="TOMA PANTALLA CONTROLD" sap:VirtualizedContainerService.HintSize="434,904" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="d3334139cc83990803b085c4bcca972f" Selector="&lt;html app='chrome.exe' title='CONTROL-D/WebAccess Server - LOGIN' /&gt;" TimeoutMS="10000">
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" DisplayName="TOMA PANTALLA CONTROLD" sap:VirtualizedContainerService.HintSize="484,890" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="d3334139cc83990803b085c4bcca972f" Selector="&lt;html app='chrome.exe' title='CONTROL-D/WebAccess Server - LOGIN' /&gt;" TimeoutMS="10000">
           <ui:WindowScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="SECUENCIA DE INICIO DE SESIÓN" sap:VirtualizedContainerService.HintSize="376,758" sap2010:WorkflowViewState.IdRef="Sequence_148">
+              <Sequence DisplayName="SECUENCIA DE INICIO DE SESIÓN" sap:VirtualizedContainerService.HintSize="450,743" sap2010:WorkflowViewState.IdRef="Sequence_148">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="Usuario" />
                   <Variable x:TypeArguments="ss:SecureString" Name="Contrasena" />
@@ -172,26 +174,26 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[Asset]" CacheStrategy="None" DisplayName="TOMA CREDENCIALES" sap:VirtualizedContainerService.HintSize="334,180" sap2010:WorkflowViewState.IdRef="GetRobotCredential_3" Password="[Contrasena]" Username="[Usuario]" />
-                <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="INGRESA USER" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="True" Text="[Usuario.ToString]">
+                <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[Asset]" CacheStrategy="None" DisplayName="TOMA CREDENCIALES" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotCredential_3" Password="[Contrasena]" Username="[Usuario]" />
+                <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="INGRESA USER" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,155" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="True" Text="[Usuario.ToString]">
                   <ui:TypeInto.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9d71dd8c-4213-4e81-aedb-65392a39060d" InformativeScreenshot="c3906218d060e851930e1f06ea84670f" Selector="&lt;webctrl id='User' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9d71dd8c-4213-4e81-aedb-65392a39060d" InformativeScreenshot="c3906218d060e851930e1f06ea84670f" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='CONTROL-D/WebAccess Server - LOGIN - Google Chrome' /&gt;&lt;ctrl name='CONTROL-D/WebAccess Server - LOGIN' role='document' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='CREDITO' role='cell' /&gt;&lt;ctrl name='User Name:' role='editable text' /&gt;" WaitForReady="INTERACTIVE">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
                     </ui:Target>
                   </ui:TypeInto.Target>
                 </ui:TypeInto>
-                <ui:TypeSecureText DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="INGRESA PSW" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[Contrasena]" SendWindowMessages="False" SimulateType="True">
+                <ui:TypeSecureText DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" AlterIfDisabled="True" ClickBeforeTyping="False" DisplayName="INGRESA PSW" EmptyField="True" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[Contrasena]" SendWindowMessages="False" SimulateType="True">
                   <ui:TypeSecureText.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e0573618-6b7a-4547-b06c-9ee490fcb98f" InformativeScreenshot="9df4e2f8cee3765e829e6b217126ef1b" Selector="&lt;webctrl id='Password' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e0573618-6b7a-4547-b06c-9ee490fcb98f" InformativeScreenshot="334fdc669439bb5855c5abb238e3db77" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='Password' tableRow='2' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
                     </ui:Target>
                   </ui:TypeSecureText.Target>
                 </ui:TypeSecureText>
-                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="CLICK SUBMIT" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" AlterIfDisabled="True" ClickType="CLICK_SINGLE" DisplayName="CLICK SUBMIT" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                   <ui:Click.CursorPosition>
                     <ui:CursorPosition Position="Center">
                       <ui:CursorPosition.OffsetX>
@@ -203,7 +205,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4bbd8970-ba1f-4003-a9c1-5056f906828a" InformativeScreenshot="aa69d27f346f0cdf0b55a95e9b75687b" Selector="&lt;webctrl id='submitImg' tag='IMG' /&gt;" WaitForReady="INTERACTIVE">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4bbd8970-ba1f-4003-a9c1-5056f906828a" InformativeScreenshot="58397420eb4a6fa7c3447a1c805b26b1" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='CONTROL-D/WebAccess Server - LOGIN - Google Chrome' /&gt;&lt;ctrl name='CONTROL-D/WebAccess Server - LOGIN' role='document' /&gt;&lt;ctrl idx='5' role='row' /&gt;&lt;ctrl name='Log in' role='cell' /&gt;&lt;ctrl name='Log in' role='link' /&gt;&lt;ctrl name='Log in' role='graphic' /&gt;" WaitForReady="INTERACTIVE">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -265,11 +267,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">390,14.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,51</av:Size>
+          <av:Size x:Key="ShapeSize">200,52</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">490,65.5 490,95.5 300,95.5 300,207</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="INICIA CONTROLD" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;ABRIR CONTROL D&quot;]">
+      <ui:LogMessage DisplayName="INICIA CONTROLD" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;ABRIR CONTROL D&quot;]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
