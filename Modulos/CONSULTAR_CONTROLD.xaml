@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>934,898</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1239.3333333333333,897.3333333333334</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DownloadRepCtrlD_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="110">
@@ -154,7 +154,7 @@
       <AssemblyReference>UiPath.Python</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="CONSULTAS CONTROL D" sap:VirtualizedContainerService.HintSize="694,833" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="CONSULTAS CONTROL D" sap:VirtualizedContainerService.HintSize="694,832.6666666666666" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Reportes" />
       <Variable x:TypeArguments="x:String" Name="PathFile" />
@@ -166,57 +166,39 @@
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:Size x:Key="ShapeSize">60,74.66666666666667</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,104</av:PointCollection>
         <x:Double x:Key="Width">660</x:Double>
         <x:Double x:Key="Height">795.5</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID2</x:Reference>
     </Flowchart.StartNode>
     <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,274.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,52</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,326.5 300,376.5</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,54</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:WriteTextFile File="{x:Null}" DisplayName="ESCRIBE FIN" FileName="[in_Config(&quot;Temporal&quot;).ToString+&quot;Termino_CtrlD.txt&quot;]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="WriteTextFile_6" Text="terminó controld">
+      <ui:WriteTextFile File="{x:Null}" DisplayName="ESCRIBE FIN" FileName="[in_Config(&quot;Temporal&quot;).ToString+&quot;Termino_CtrlD.txt&quot;]" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="WriteTextFile_6" Text="terminó controld">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:WriteTextFile>
-      <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID2">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">200,376.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,52</av:Size>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;ALTO&quot;]">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:MessageBox>
-        </FlowStep>
-      </FlowStep.Next>
     </FlowStep>
-    <FlowStep x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+    <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,104</av:Point>
-          <av:Size x:Key="ShapeSize">200,52</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,156 300,177</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,54</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,158 300,177</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Folder="{x:Null}" SecureCredentialSecret="{x:Null}" TimeoutMS="{x:Null}" AuthenticationType="ServiceAccountKey" ConfigLocation="PropertiesPanel" DataStoreLocation="DISK" DisplayName="RECONOCIMIENTO DE BASE DE DESCARGA" HasDomainWideAccesss="True" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_2" KeyPath="[in_Config(&quot;Json_Drive&quot;).ToString]" KeyType="JSON" OAuthClient="UIPATH" Password="notasecret" ServiceAccountEmail="[in_Config(&quot;User_Drive&quot;).ToString]" Services="Unselected" UseConnectionService="False" UserEmail="[in_Config(&quot;User_Drive&quot;).ToString]">
+      <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Folder="{x:Null}" SecureCredentialSecret="{x:Null}" TimeoutMS="{x:Null}" AuthenticationType="ServiceAccountKey" ConfigLocation="PropertiesPanel" DataStoreLocation="DISK" DisplayName="RECONOCIMIENTO DE BASE DE DESCARGA" HasDomainWideAccesss="True" sap:VirtualizedContainerService.HintSize="200,54" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_2" KeyPath="[in_Config(&quot;Json_Drive&quot;).ToString]" KeyType="JSON" OAuthClient="UIPATH" Password="notasecret" ServiceAccountEmail="[in_Config(&quot;User_Drive&quot;).ToString]" Services="Unselected" UseConnectionService="False" UserEmail="[in_Config(&quot;User_Drive&quot;).ToString]">
         <uga:GSuiteApplicationScope.AuthenticationScopes>
           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
             <InArgument x:TypeArguments="x:String">https://www.googleapis.com/auth/drive.readonly</InArgument>
@@ -293,11 +275,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">200,177</av:Point>
-              <av:Size x:Key="ShapeSize">200,81</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">300,258 300,274.5</av:PointCollection>
+              <av:Size x:Key="ShapeSize">200,84.66666666666667</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">300,261.6666666666667 300,274.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="DESCARGA" sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_1656">
+          <Sequence DisplayName="DESCARGA" sap:VirtualizedContainerService.HintSize="200,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1656">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -350,19 +332,11 @@
                           </ui:LogMessage>
                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\Invoke_Python.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Modulos\Invoke_Python.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">
-                                <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="Ruta_Script">
-                                <Literal x:TypeArguments="x:String">Archivos/CONFIGURACION/Descarga_jobs.py</Literal>
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="Invoke_Method">
-                                <Literal x:TypeArguments="x:String">main</Literal>
-                              </InArgument>
+                              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Ruta_Script">Archivos/CONFIGURACION/Descarga_jobs.py</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Invoke_Method">main</InArgument>
                               <OutArgument x:TypeArguments="x:String" x:Key="Return_Python" />
-                              <InArgument x:TypeArguments="scg:IEnumerable(x:Object)" x:Key="Arguments_Python">
-                                <VisualBasicValue x:TypeArguments="scg:IEnumerable(x:Object)" ExpressionText="{}{row(2).ToString, row(1).ToString, in_FECHA, in_FECHA, &quot;Reporte ARU080&quot;, in_Config(&quot;Temporal&quot;).ToString, &quot;TXT&quot;, &quot;&quot;}" />
-                              </InArgument>
+                              <InArgument x:TypeArguments="scg:IEnumerable(x:Object)" x:Key="Arguments_Python">[{row(2).ToString, row(1).ToString, in_FECHA, in_FECHA, "Reporte ARU080", in_Config("Temporal").ToString, "TXT", ""}]</InArgument>
                             </ui:InvokeWorkflowFile.Arguments>
                           </ui:InvokeWorkflowFile>
                         </Sequence>
@@ -395,6 +369,5 @@
       </FlowStep.Next>
     </FlowStep>
     <x:Reference>__ReferenceID1</x:Reference>
-    <x:Reference>__ReferenceID2</x:Reference>
   </Flowchart>
 </Activity>
